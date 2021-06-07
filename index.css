@@ -39,7 +39,7 @@ making heading and footer animated
 */
 
 h1 {
-  color: #484848;
+  color: #06649f;
   font-size: 50px;
   font-weight: bold;
   font-family: monospace;
@@ -67,6 +67,10 @@ making heading and footer animated
 
 
 */
+.form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 input[type="text"],
 input[type="password"] {
@@ -75,6 +79,7 @@ input[type="password"] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
+  border-radius: 5px;
   background: #f1f1f1;
 }
 
@@ -156,7 +161,7 @@ p {
   transition: 0.5s;
   align-items: center;
   background: rgb(71, 75, 81);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.005);
   box-shadow: 0 4px 18px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
