@@ -252,7 +252,7 @@ function openNav(movie) {
            <div class="overlay-video"> 
               <iframe
               width="100%"
-              height="70%"
+              height="100%"
               src="https://www.youtube.com/embed/${key}"
               title="${name}"
               class="embed hide"
