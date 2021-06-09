@@ -243,30 +243,38 @@ function openNav(movie) {
       if (videoData) {
         document.getElementById("myNav").style.width = "100%";
         if (videoData.results.length > 0) {
-          var embed = [];
-          var dots = [];
-          videoData.results.forEach((video, idx) => {
-            let { name, key, site } = video;
-
-            if (site == "YouTube") {
-              embed.push(`
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="${name}" class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
-          `);
-
-              dots.push(`
-              <span class="dot">${idx + 1}</span>
-            `);
-            }
-          });
+          let { name, key, site } = videoData.results[0];
 
           var content = `
-        <h1 class="no-results">${movie.original_title}</h1>
+         
+
+         <div class="overlay-text">
+           <div class="overlay-video"> 
+              <iframe
+              width="100%"
+              height="70%"
+              src="https://www.youtube.com/embed/${key}"
+              title="${name}"
+              class="embed hide"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>;
+          </div>  
+          <div class="overlay-right">
+            <div class="overlay-title">
+                <h1 class="no-results">${movie.original_title}</h1>
+                <br/>
+            </div>
+            <div class="overlay-overview">
+                <p class="no-results" >${movie.overview}</p>
+            </div> 
+          </div>    
+        </div>
+        
         <br/>
-        <h3 class="no-results" >${movie.overview}</h3>
-        ${embed.join("")}
-        <br/>
-        <div class="dots">${dots.join("")}</div>
+        
+        
         
         `;
           overlayContent.innerHTML = content;
