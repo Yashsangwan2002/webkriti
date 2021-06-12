@@ -343,3 +343,40 @@ function pageCall(page) {
     getMovies(url);
   }
 }
+
+// login page
+
+document.getElementById('log').addEventListener("click", function() {
+	document.querySelector('.BOX').style.display = "flex";
+});
+
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.BOX').style.display = "none";
+});
+
+
+// signup
+
+document.getElementById('signup').addEventListener("click", function() {
+ 
+
+  
+	document.querySelector('.BOX2').style.display = "flex";
+  
+
+  
+});
+
+document.querySelector('.close2').addEventListener("click", function() {
+	document.querySelector('.BOX2').style.display = "none";
+  document.querySelector('.BOX').style.display = "none";
+});
+
+document.querySelector('.back').addEventListener("click", function() {
+	
+  document.querySelector('.BOX2').style.display = "none";
+});
+
+
+
+

@@ -10,6 +10,7 @@
 }
 html {
   background-color: black;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -306,3 +307,88 @@ main {
     right: 35px;
   }
 }
+
+/* loginpage */
+
+.BOX {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.BOX-items {
+  /* border: 2px solid white; */
+	height: 300px;
+	width: 500px;
+	background-color: white;
+  /* background-color: transparent; */
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 20px;
+	color: #333;
+
+	cursor: pointer;
+	
+}
+
+.white{
+  color: white;
+}
+
+.BOX2 {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.BOX-items2 {
+	height: 450px;
+	width: 500px;
+	background-color: white;
+  /* background-color: transparent; */
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+
+
+.close2 {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 20px;
+	color: #333;
+
+	cursor: pointer;
+	
+}
+
+
