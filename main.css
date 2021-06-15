@@ -326,16 +326,18 @@ main {
 }
 
 .BOX-items {
-  /* border: 2px solid white; */
-	height: 300px;
-	width: 500px;
+ 
+	height: 20rem;
+	width: 30rem;
 	background-color: white;
-  /* background-color: transparent; */
+  
 	text-align: center;
 	padding: 20px;
 	position: relative;
 	border-radius: 4px;
 }
+
+
 
 input {
 	margin: 15px auto;
@@ -343,16 +345,23 @@ input {
 	width: 50%;
 	padding: 8px;
 	border: 1px solid gray;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .close {
 	position: absolute;
 	top: 0;
+  
 	right: 10px;
-	font-size: 20px;
+	font-size: 24px;
 	color: #333;
 
 	cursor: pointer;
+  transform: rotate(45deg);
+	
+	
+	
 	
 }
 
@@ -372,12 +381,13 @@ input {
 }
 
 .BOX-items2 {
-	height: 450px;
-	width: 500px;
+	height: 22em;
+	width: 32em;
+  
 	background-color: white;
-  /* background-color: transparent; */
+ 
 	text-align: center;
-	padding: 20px;
+	padding: 10px;
 	position: relative;
 	border-radius: 4px;
 }
@@ -388,10 +398,12 @@ input {
 	position: absolute;
 	top: 0;
 	right: 10px;
-	font-size: 20px;
+	font-size: 24px;
 	color: #333;
 
 	cursor: pointer;
+  cursor: pointer;
+  transform: rotate(45deg);
 	
 }
 
@@ -404,6 +416,27 @@ input {
   font-size: 1.2rem;
 }
 
+.button{
+  width: 6rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgb(108, 108, 204);
+  color: white;
+  font-size:1em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+h1{
+  color: white;
+  font-family:"Poppins", sans-serif ;
+  font-weight: 2px;
+  position: relative;
+  margin-top: 0;
+  font-size: 2.5em;
+}
+h1:hover{
+ color: rgb(148, 148, 241);
+}
 
 
 
