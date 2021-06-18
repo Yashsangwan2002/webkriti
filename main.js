@@ -357,10 +357,21 @@ function pageCall(page) {
 
 document.getElementById("log").addEventListener("click", function () {
   document.querySelector(".BOX").style.display = "flex";
+document.getElementById('log').addEventListener("click", function() {
+  document.querySelector('header').style.pointerEvents="None"
+  document.querySelector('main').style.pointerEvents="None"
+  document.querySelector('body').style.overflow="hidden"
+
+	document.querySelector('.BOX').style.display = "flex";
 });
 
 document.querySelector(".close").addEventListener("click", function () {
   document.querySelector(".BOX").style.display = "none";
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.BOX').style.display = "none";
+  document.querySelector('header').style.pointerEvents="Visible"
+  document.querySelector('main').style.pointerEvents="Visible"
+  document.querySelector('body').style.overflow="scroll"
 });
 
 // signup
@@ -372,6 +383,12 @@ document.getElementById("signup").addEventListener("click", function () {
 document.querySelector(".close2").addEventListener("click", function () {
   document.querySelector(".BOX2").style.display = "none";
   document.querySelector(".BOX").style.display = "none";
+document.querySelector('.close2').addEventListener("click", function() {
+  document.querySelector('header').style.pointerEvents="Visible"
+  document.querySelector('main').style.pointerEvents="Visible"
+	document.querySelector('.BOX2').style.display = "none";
+  document.querySelector('.BOX').style.display = "none";
+  document.querySelector('body').style.overflow="scroll"
 });
 
 document.querySelector(".back").addEventListener("click", function () {

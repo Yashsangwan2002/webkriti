@@ -13,6 +13,7 @@
   </head>
   <body>
     <header>
+      <h1>Theatre</h1>
       <div class="navbar">
         <div class="dropdown">
           <button class="dropbtn">
@@ -29,8 +30,9 @@
         <input type="text" placeholder="Search" id="search" class="search" />
       </form>
       
-         <!-- <button id="log">cancel</button> -->
-         <p id="log" class="white">login</p>
+         <button id="log" class="LOgin" >Login</button>
+         <!-- <p id="log" class="white">login</p> -->
+         <!-- <a id="log"  href="">login</a> -->
         
      
      
@@ -61,8 +63,8 @@
       <div class="BOX-items">
     
         <div class="close">
-          <!-- <a href="">cancel</a> -->
-          <p>Cancel</p>
+          
+          <p class="Cancel">+</p>
         </div>
         
         <h2>Login</h2>
@@ -72,8 +74,8 @@
           <input type="password" placeholder="password">
           <!-- <a href="#" class="button">Submit</a> -->
           
-          <button>Submit</button>
-          <button id="signup">Signup</button>
+          <button class="button">Submit</button>
+          <button class="button" id="signup">Signup</button>
         <!-- </form> -->
     
       </div>
@@ -85,23 +87,34 @@
       
           <div class="close2">
             <!-- <a href="">cancel</a> -->
-            <p>Cancel</p>
+            <p class="Cancel">+</p>
           </div>
           
-          <h2>Signup</h2>
+          <h2>Create account</h2>
       
           <!-- <form action=""> -->
-            <input type="text" placeholder="Firstname">
-            <input type="text" placeholder="Lasttname">
-            <input type="Number" placeholder="Number">
-
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Password">
-            <!-- <a href="#" class="button">Submit</a> -->
-            
-            <button>Submit</button>
-            <button class="back">Signin</button>
+            <div class="Content">
+              <div class="Name">
+                
+                <div class="first">
+                  
+                  <input type="text" placeholder="Firstname">
+                </div>
+                <div class="last">
+                  
+                  <input type="text" placeholder="Lastname">
+                                </div>
+                </div>
+             
+              
+              <input type="email" placeholder="Email">
+             
+              <input type="password" placeholder=" Password">
+              <!-- <a href="#" class="button">Submit</a> -->
+              
+              <button class="button">Submit</button>
+              <button class="back button">Signin</button>
+            </div>
           <!-- </form> -->
       
         </div>
@@ -109,3 +122,4 @@
     <script src="/main.js"></script>
   </body>
 </html>
+
