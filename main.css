@@ -43,11 +43,11 @@ header {
 
 .search:focus {
   outline: 0;
-  background-color: var(--primary-color);
+  background-color: var(-rimary-color);
 }
 
 .search::placeholder {
-  color: #7378c5;
+  color: white;
 }
 
 main {
@@ -215,13 +215,13 @@ main {
 .current {
   padding: 10px 20px;
   border-radius: 50%;
-  border: 5px solid orange;
+  border: 5px solid red;
   font-size: 20px;
   font-weight: 600;
 }
 
 .know-more {
-  background-color: orange;
+  background-color: red;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -229,6 +229,24 @@ main {
   border-radius: 50px;
   padding: 10px 20px;
   margin-top: 5px;
+  transition: 0.1s;
+}
+.know-more:hover {
+  transform: scale(1.1);
+}
+.booknow {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: 0.1s;
+}
+.booknow:hover {
+  transform: scale(1.1);
 }
 /* The Overlay (background) */
 .overlay {
@@ -311,84 +329,78 @@ main {
 /* loginpage */
 
 .BOX {
-	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	display: none;
-	justify-content: center;
-	align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .BOX-items {
   /* border: 2px solid white; */
-	height: 300px;
-	width: 500px;
-	background-color: white;
+  height: 300px;
+  width: 500px;
+  background-color: white;
   /* background-color: transparent; */
-	text-align: center;
-	padding: 20px;
-	position: relative;
-	border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
 }
 
 input {
-	margin: 15px auto;
-	display: block;
-	width: 50%;
-	padding: 8px;
-	border: 1px solid gray;
+  margin: 15px auto;
+  display: block;
+  width: 50%;
+  padding: 8px;
+  border: 1px solid gray;
 }
 
 .close {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	font-size: 20px;
-	color: #333;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 20px;
+  color: #333;
 
-	cursor: pointer;
-	
+  cursor: pointer;
 }
 
-.white{
+.white {
   color: white;
 }
 
 .BOX2 {
-	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	display: none;
-	justify-content: center;
-	align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .BOX-items2 {
-	height: 450px;
-	width: 500px;
-	background-color: white;
+  height: 450px;
+  width: 500px;
+  background-color: white;
   /* background-color: transparent; */
-	text-align: center;
-	padding: 20px;
-	position: relative;
-	border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
 }
-
-
 
 .close2 {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	font-size: 20px;
-	color: #333;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 20px;
+  color: #333;
 
-	cursor: pointer;
-	
+  cursor: pointer;
 }
-
-

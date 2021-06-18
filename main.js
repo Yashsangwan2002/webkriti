@@ -220,6 +220,11 @@ function showMovies(data) {
                 
                 <button class="know-more" id="${id}">Know More</button
             </div>
+            <div class="book">
+                
+            <button class="booknow" >book now</button
+            </div>
+    
         
         `;
 
@@ -268,6 +273,10 @@ function openNav(movie) {
             </div>
             <div class="overlay-overview">
                 <p class="no-results" >${movie.overview}</p>
+            </div>
+            <div class="book">
+                
+            <button class="booknow" >book now</button
             </div> 
           </div>    
         </div>
@@ -346,37 +355,25 @@ function pageCall(page) {
 
 // login page
 
-document.getElementById('log').addEventListener("click", function() {
-	document.querySelector('.BOX').style.display = "flex";
+document.getElementById("log").addEventListener("click", function () {
+  document.querySelector(".BOX").style.display = "flex";
 });
 
-document.querySelector('.close').addEventListener("click", function() {
-	document.querySelector('.BOX').style.display = "none";
+document.querySelector(".close").addEventListener("click", function () {
+  document.querySelector(".BOX").style.display = "none";
 });
-
 
 // signup
 
-document.getElementById('signup').addEventListener("click", function() {
- 
-
-  
-	document.querySelector('.BOX2').style.display = "flex";
-  
-
-  
+document.getElementById("signup").addEventListener("click", function () {
+  document.querySelector(".BOX2").style.display = "flex";
 });
 
-document.querySelector('.close2').addEventListener("click", function() {
-	document.querySelector('.BOX2').style.display = "none";
-  document.querySelector('.BOX').style.display = "none";
+document.querySelector(".close2").addEventListener("click", function () {
+  document.querySelector(".BOX2").style.display = "none";
+  document.querySelector(".BOX").style.display = "none";
 });
 
-document.querySelector('.back').addEventListener("click", function() {
-	
-  document.querySelector('.BOX2').style.display = "none";
+document.querySelector(".back").addEventListener("click", function () {
+  document.querySelector(".BOX2").style.display = "none";
 });
-
-
-
-
