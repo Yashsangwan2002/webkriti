@@ -220,10 +220,12 @@ function showMovies(data) {
                 
                 <button class="know-more" id="${id}">Know More</button
             </div>
+        
             <div class="book">
                 
-            <button class="booknow" >book now</button
+            <button class="booknow" id="${poster_path}" onClick="reply_click(this.id)"> book now</button
             </div>
+         
     
         
         `;
@@ -236,6 +238,10 @@ function showMovies(data) {
     });
   });
 }
+
+document.getElementbyClassName("booknow").onclick = function () {
+  location.href = "../booking/book.html";
+};
 
 const overlayContent = document.getElementById("overlay-content");
 /* Open when someone clicks on the span element */
@@ -274,10 +280,12 @@ function openNav(movie) {
             <div class="overlay-overview">
                 <p class="no-results" >${movie.overview}</p>
             </div>
+            <a href="../booking/book.html">
             <div class="book">
                 
             <button class="booknow" >book now</button
             </div> 
+            </a>
           </div>    
         </div>
         
@@ -352,45 +360,3 @@ function pageCall(page) {
     getMovies(url);
   }
 }
-
-// login page
-
-document.getElementById("log").addEventListener("click", function () {
-  document.querySelector(".BOX").style.display = "flex";
-document.getElementById('log').addEventListener("click", function() {
-  document.querySelector('header').style.pointerEvents="None"
-  document.querySelector('main').style.pointerEvents="None"
-  document.querySelector('body').style.overflow="hidden"
-
-	document.querySelector('.BOX').style.display = "flex";
-});
-
-document.querySelector(".close").addEventListener("click", function () {
-  document.querySelector(".BOX").style.display = "none";
-document.querySelector('.close').addEventListener("click", function() {
-	document.querySelector('.BOX').style.display = "none";
-  document.querySelector('header').style.pointerEvents="Visible"
-  document.querySelector('main').style.pointerEvents="Visible"
-  document.querySelector('body').style.overflow="scroll"
-});
-
-// signup
-
-document.getElementById("signup").addEventListener("click", function () {
-  document.querySelector(".BOX2").style.display = "flex";
-});
-
-document.querySelector(".close2").addEventListener("click", function () {
-  document.querySelector(".BOX2").style.display = "none";
-  document.querySelector(".BOX").style.display = "none";
-document.querySelector('.close2').addEventListener("click", function() {
-  document.querySelector('header').style.pointerEvents="Visible"
-  document.querySelector('main').style.pointerEvents="Visible"
-	document.querySelector('.BOX2').style.display = "none";
-  document.querySelector('.BOX').style.display = "none";
-  document.querySelector('body').style.overflow="scroll"
-});
-
-document.querySelector(".back").addEventListener("click", function () {
-  document.querySelector(".BOX2").style.display = "none";
-});

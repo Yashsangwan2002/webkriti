@@ -4,122 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="./login.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Theatre</h1>
-      <div class="navbar">
-        <div class="dropdown">
-          <button class="dropbtn">
-            Genre
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <div id="tags"></div>
-          </div>
-        </div>
-      </div>
-
-      <form id="form">
-        <input type="text" placeholder="Search" id="search" class="search" />
+    <div class="form-container">
+      <form class="signin-form">
+        <div class="form-heading">Sign In</div>
+        <input class="signin-email" type="text" placeholder="Email" />
+        <input class="signin-password" type="password" placeholder="Password" />
+        <button type="submit">Sign In</button>
       </form>
-      
-         <button id="log" class="LOgin" >Login</button>
-         <!-- <p id="log" class="white">login</p> -->
-         <!-- <a id="log"  href="">login</a> -->
-        
-     
-     
-    </header>
-
-    <div id="myNav" class="overlay">
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-
-      <!-- Overlay content -->
-
-      <div class="overlay-content" id="overlay-content"></div>
-    </div>
-    <main id="main"></main>
-    <div class="pagination">
-      <div class="page" id="prev">Previous Page</div>
-      <div class="current" id="current">1</div>
-      <div class="page" id="next">Next Page</div>
+      <form class="signup-form">
+        <div class="form-heading">Sign Up</div>
+        <input class="signup-email" type="text" placeholder="Email" />
+        <input class="signup-name" type="text" placeholder="Name" />
+        <input class="signup-password" type="password" placeholder="Password" />
+        <input
+          class="signup-retyped-password"
+          type="password"
+          placeholder="Re-type Password"
+        />
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
 
-    <!-- login page -->
-
-    
-
-    <div class="BOX">
-      <div class="BOX-items">
-    
-        <div class="close">
-          
-          <p class="Cancel">+</p>
-        </div>
-        
-        <h2>Login</h2>
-    
-        <!-- <form action=""> -->
-          <input type="email" placeholder="Email">
-          <input type="password" placeholder="password">
-          <!-- <a href="#" class="button">Submit</a> -->
-          
-          <button class="button">Submit</button>
-          <button class="button" id="signup">Signup</button>
-        <!-- </form> -->
-    
-      </div>
-
-      <!-- signup -->
-
-      <div class="BOX2">
-        <div class="BOX-items2">
-      
-          <div class="close2">
-            <!-- <a href="">cancel</a> -->
-            <p class="Cancel">+</p>
-          </div>
-          
-          <h2>Create account</h2>
-      
-          <!-- <form action=""> -->
-            <div class="Content">
-              <div class="Name">
-                
-                <div class="first">
-                  
-                  <input type="text" placeholder="Firstname">
-                </div>
-                <div class="last">
-                  
-                  <input type="text" placeholder="Lastname">
-                                </div>
-                </div>
-             
-              
-              <input type="email" placeholder="Email">
-             
-              <input type="password" placeholder=" Password">
-              <!-- <a href="#" class="button">Submit</a> -->
-              
-              <button class="button">Submit</button>
-              <button class="back button">Signin</button>
-            </div>
-          <!-- </form> -->
-      
-        </div>
-
-    <script src="/main.js"></script>
+    <script src="./login.js"></script>
   </body>
 </html>
-
