@@ -223,7 +223,7 @@ function showMovies(data) {
         
             <div class="book">
                 
-            <button class="booknow" id="${poster_path}" onClick="reply_click(this.id)"> book now</button
+            <button class="booknow" > book now</button
             </div>
          
     
@@ -238,10 +238,6 @@ function showMovies(data) {
     });
   });
 }
-
-document.getElementbyClassName("booknow").onclick = function () {
-  location.href = "../booking/book.html";
-};
 
 const overlayContent = document.getElementById("overlay-content");
 /* Open when someone clicks on the span element */
