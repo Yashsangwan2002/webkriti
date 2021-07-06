@@ -223,7 +223,7 @@ function showMovies(data) {
         
             <div class="book">
                 
-            <button class="booknow" > book now</button
+            <button class="booknow" > book now</button>
             </div>
          
     
