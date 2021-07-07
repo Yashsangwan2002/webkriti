@@ -4,7 +4,7 @@ for (var i = 0; i < seats.length; i++) {
   var item = seats[i];
 
   item.addEventListener("click", (event) => {
-    var price = document.getElementById("movie").value;
+    var price = 10;
 
     if (
       !event.target.classList.contains("occupied") &&
@@ -19,5 +19,7 @@ for (var i = 0; i < seats.length; i++) {
     }
   });
 }
-var name = localStorage.getItem("name ");
-alert(name);
+const urlParams = new URLSearchParams(location.search);
+for (const value of urlParams.values()) {
+  document.getElementById("title").innerHTML = value;
+}

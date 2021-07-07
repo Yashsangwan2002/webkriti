@@ -220,7 +220,7 @@ function showMovies(data) {
                 
                 <button class="know-more" id="${id}">Know More</button
             </div>
-            <a href="../booking/book.html"> 
+            <a href="../booking/book.html?name=${title}"> 
             <div class="book">
             
             <button class="booknow" id="${title}" > book now</button>
@@ -303,12 +303,6 @@ function openNav(movie) {
 }
 
 ///
-
-document.querySelectorAll(".booknow").forEach((item) => {
-  item.addEventListener("click", (event) => {
-    localStorage.setItem("name", item.id);
-  });
-});
 
 ////
 
