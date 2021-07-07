@@ -9,29 +9,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script><title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Theatre</h1>
-      <div class="navbar">
-        <div class="dropdown">
-          <button class="dropbtn">
-            Genre
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <div id="tags"></div>
-          </div>
-        </div>
-      </div>
-
-      <form id="form">
-        <input type="text" placeholder="Search" id="search" class="search" />
-      </form>
-
-      <a href="../dashboard/dashboard.html"> <button class="button button3">dashboard</button></a>
-
+      <h1 class="logo">Theatre</h1>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+ 
+      <!-- <div class="navbar"> -->
+        <ul>
+          
+                <!-- </div> -->
+                <a class="button button3 li" href="../dashboard/dashboard.html">  Dashboard</a>
+          
+                <form class="li"
+                id="form">
+          <input type="text" placeholder=" &#xf002;  Search" id="search" class="search" />
+                </form>
+          
+               
+             
+             <div class="dropdown li">
+              <button class="dropbtn">
+                Genre
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div id="tags"></div>
+              </div>
+            </div>
+        </ul>
 
       
         
