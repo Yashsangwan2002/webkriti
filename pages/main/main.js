@@ -220,7 +220,7 @@ function showMovies(data) {
                 
                 <button class="know-more" id="${id}">Know More</button
             </div>
-            <a href="../booking/book.html?name=${title}"> 
+            <a href="../booking/book.html?name=${title}&poster=${poster_path}"> 
             <div class="book">
             
             <button class="booknow" id="${title}" > book now</button>
