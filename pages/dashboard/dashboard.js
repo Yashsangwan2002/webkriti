@@ -1,4 +1,4 @@
-const apiUrl = "https://dashboard.heroku.com/apps/serverwebmonth ";
+const apiUrl = "https://serverwebmonth.herokuapp.com";
 var key = localStorage.getItem("email");
 let email = key;
 const main = document.getElementById("main");

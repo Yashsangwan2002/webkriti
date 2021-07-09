@@ -62,7 +62,7 @@ var key = localStorage.getItem("email");
 console.log(key);
 
 //saving data into database
-const apiUrl = " https://dashboard.heroku.com/apps/serverwebmonth";
+const apiUrl = "https://serverwebmonth.herokuapp.com";
 
 const signInForm = document.querySelector(".button");
 

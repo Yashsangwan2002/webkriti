@@ -12,7 +12,7 @@ signInButton.addEventListener("click", () => {
 //form
 const body = document.querySelector("body");
 
-const apiUrl = "https://dashboard.heroku.com/apps/serverwebmonth";
+const apiUrl = "https://serverwebmonth.herokuapp.com";
 
 window.addEventListener("load", () => {
   body.classList.add("visible");
