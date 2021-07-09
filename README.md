@@ -43,5 +43,5 @@ Firstly, the user should give npm start command to start the server. Then the us
 # Team Members
 - Adarsh Aryan, 2020IMG-003
 - Samarth Singh Bhadauria, 2020IMG-055
-- Yash Sangwan, 2020IMG-055
+- Yash Sangwan, 2020IMG-069
 
