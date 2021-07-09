@@ -1,15 +1,17 @@
-#**THEATRE**
-# Project Description
+# THEATRE
+# PROJECT DESCRIPTION
 This Project is based on *Movie Booking Application*. The Site's Name is **Theatre**. 
-*This Project is a simple and easy to use online movie ticket booking application. 
-*Users can login to our website and can see their order history. 
-*This site is based on HTML, CSS and JavaScript.
+
+- This Project is a simple and easy to use online movie ticket booking application.
+- Users can login to our website and can see their order history. 
+- This site is based on HTML, CSS and JavaScript.
+
  
-# Screenshots
+# SCREENSHOTS
 ----Screenshots----
 
-# Hosted URL
-----If Hosted----
+# HOSTED URL
+Follow this link to view the site:
 
 # Features Implemented
 ## Frontend
@@ -24,6 +26,7 @@ This Project is based on *Movie Booking Application*. The Site's Name is **Theat
 ----Steps to setup the project locally----
 
 # Team Members
-*Adarsh Aryan, 2020IMG-005
-*Samarth Singh Bhadauria, 2020IMG-055
-*Yash Sangwan, 2020IMG-055
+- Adarsh Aryan, 2020IMG-005
+- Samarth Singh Bhadauria, 2020IMG-055
+- Yash Sangwan, 2020IMG-055
+
