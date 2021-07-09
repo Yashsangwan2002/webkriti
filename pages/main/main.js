@@ -226,7 +226,7 @@ function showMovies(data) {
             <a href="../booking/book.html?name=${title}&poster=${poster_path}"> 
             <div class="book">
             
-            <button class="booknow" id="${title}" > book now</button>
+            <button class="booknow" id="${title}" > Book Now</button>
            
             </div>
             </a>
@@ -265,7 +265,7 @@ function openNav(movie) {
               <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/${key}?autoplay=1"
+              src="https://www.youtube.com/embed/${key}?autoplay=1&mute=1"
               title="${name}"
               class="embed hide"
               frameborder="0"
@@ -284,7 +284,7 @@ function openNav(movie) {
             <a href="../booking/book.html?name=${title1}&poster=${poster_path1}"> 
             <div class="book">
                 
-            <button class="booknow" >book now</button>
+            <button class="booknow" >Book Now</button>
             </div> 
             </a>
           </div>    

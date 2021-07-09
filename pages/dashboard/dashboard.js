@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
           movieEl.innerHTML = `    <div class="flex-container">
           <div class="content-container">
             <div class="form-container">
-              <h1 style="color:rgb(9, 255, 0);"></h1>
+              <h1 style="color:rgb(9, 255, 0);">Details</h1>
               <h2 class="white" id="name">Movie Name:${data[0].moviename}</h2>
               <br />
              
