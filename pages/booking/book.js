@@ -15,8 +15,7 @@ for (var i = 0; i < seats.length; i++) {
 
       var total = count * price;
       event.target.classList.add("selected");
-      // document.getElementById("count").innerText = count;
-      // document.getElementById("total").innerText = total;
+
       document.querySelector(".seats").innerHTML = `No of seats:  ${count}`;
       document.querySelector(".amount").innerHTML = `Bill Amount:  ${total}`;
     }
@@ -44,6 +43,7 @@ document.getElementById("movimg").innerHTML = `
                a[1] ? IMG_URL + a[1] : "http://via.placeholder.com/1080x1580"
              }" alt=""  height="80%" width="70%">`;
 
+//ticket
 document.getElementById("log").addEventListener("click", function () {
   document.querySelector(".Movie-Name").innerHTML = `Movie-Name:  ${a[0]}`;
 
