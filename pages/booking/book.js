@@ -1,75 +1,34 @@
+var count = 0;
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
-const seats = document.querySelectorAll(".row .seat:not(.occupied)");
-const seatContainer = document.querySelector(".row-container");
-const count = document.getElementById("count");
-const total = document.getElementById("total");
-const movieSelect = document.getElementById("movie");
+var seats = document.getElementsByClassName("seat");
+for (var i = 0; i < seats.length; i++) {
+  var item = seats[i];
 
-populateUI();
+  item.addEventListener("click", (event) => {
+    var price = 150;
 
-let ticketPrice = +movieSelect.value;
+    if (
+      !event.target.classList.contains("occupied") &&
+      !event.target.classList.contains("selected")
+    ) {
+      count++;
 
-// Save selected movie index and price
-function setMovieData(movieIndex, moviePrice) {
-  localStorage.setItem("selectedMovieIndex", movieIndex);
-  localStorage.setItem("selectedMoviePrice", moviePrice);
-}
-
-function updateSelectedCount() {
-  const selectedSeats = document.querySelectorAll(".container .selected");
-
-  seatsIndex = [...selectedSeats].map(function (seat) {
-    return [...seats].indexOf(seat);
+      var total = count * price;
+      event.target.classList.add("selected");
+      // document.getElementById("count").innerText = count;
+      // document.getElementById("total").innerText = total;
+      document.querySelector(".seats").innerHTML = `No of seats:  ${count}`;
+      document.querySelector(".amount").innerHTML = `Bill Amount:  ${total}`;
+    }
   });
-
-  localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
-
-  let selectedSeatsCount = selectedSeats.length;
-  count.textContent = selectedSeatsCount;
-  total.textContent = selectedSeatsCount * ticketPrice;
 }
+let Date = document.getElementById("date");
 
-// Get data from localstorage and populate
-function populateUI() {
-  const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
-
-  if (selectedSeats !== null && selectedSeats.length > 0) {
-    seats.forEach(function (seat, index) {
-      if (selectedSeats.indexOf(index) > -1) {
-        seat.classList.add("selected");
-      }
-    });
-  }
-
-  const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
-
-  if (selectedMovieIndex !== null) {
-    movieSelect.selectedIndex = selectedMovieIndex;
-  }
-}
-
-// Movie select event
-
-movieSelect.addEventListener("change", function (e) {
-  ticketPrice = +movieSelect.value;
-  setMovieData(e.target.selectedIndex, e.target.value);
-  updateSelectedCount();
+Date.addEventListener("change", (event) => {
+  var Datee = event.target.value;
+  document.querySelector(".dates").innerHTML = `Date:  ${Datee}`;
 });
 
-// Adding selected class to only non-occupied seats on 'click'
-
-seatContainer.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("seat") &&
-    !e.target.classList.contains("occupied")
-  ) {
-    e.target.classList.toggle("selected");
-    updateSelectedCount();
-  }
-});
-
-// Initial count and total rendering
-updateSelectedCount();
 const urlParams = new URLSearchParams(location.search);
 let a = [];
 let z = 0;
@@ -84,3 +43,58 @@ document.getElementById("movimg").innerHTML = `
              <img src="${
                a[1] ? IMG_URL + a[1] : "http://via.placeholder.com/1080x1580"
              }" alt=""  height="80%" width="70%">`;
+
+document.getElementById("log").addEventListener("click", function () {
+  document.querySelector(".Movie-Name").innerHTML = `Movie-Name:  ${a[0]}`;
+
+  document.querySelector("body").style.overflow = "hidden";
+
+  document.querySelector(".BOX").style.display = "flex";
+});
+
+document.querySelector(".close").addEventListener("click", function () {
+  document.querySelector(".BOX").style.display = "none";
+
+  document.querySelector("body").style.overflow = "scroll";
+});
+
+var key = localStorage.getItem("email");
+console.log(key);
+
+//saving data into database
+const apiUrl = " https://serverwebmonth.herokuapp.com";
+
+const signInForm = document.querySelector(".button");
+
+signInForm.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const bookdate = document.getElementById("date");
+
+  const date = bookdate.value;
+  const email = key;
+  const movieName = a[0];
+
+  fetch(`${apiUrl}/booknow/book`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ movieName, email, date }),
+  })
+    .then(() => (location.href = "/pages/main/main.html"))
+    // .then((data) => {
+    //   const { token } = data;
+
+    //   if (token) {
+    //     localStorage.setItem("jwt", token);
+    //     location.href = "/pages/main/main.html";
+    //   } else {
+    //     alert("SignIn Again");
+    //   }
+    // })
+    .catch((err) => {
+      alert("Error booking!!!");
+      console.log(err);
+    });
+});

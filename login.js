@@ -59,7 +59,9 @@ signUpForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const email = document.querySelector(".signup-email").value;
+  localStorage.setItem("email", `${email}`);
   const name = document.querySelector(".signup-name").value;
+
   const password = document.querySelector(".signup-password").value;
   /* const retypedPassword = document.querySelector(
     ".signup-retyped-password"

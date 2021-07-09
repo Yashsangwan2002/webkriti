@@ -10,121 +10,148 @@
     <style></style>
   </head>
   <body>
-    <div class="whole">
-      <div class="image">
-        <h1 id="title"></h1>
-        <div id="movimg"></div>
-      </div>
+    <a href="../main/main.html">
+      <button class="btn-home">Home</button>
+    </a>
+    <div class="image">
+      <h1 id="title"></h1>
+      <div id="movimg" class="img"></div>
+    </div>
 
-      <div class="contt">
-        <h2>Cinema Kocation: IIITM GWALIOR</h2>
-
-        <ul class="showcase">
-          <li>
-            <div class="seat"></div>
-            <small>N/A</small>
-          </li>
-          <li>
-            <div class="seat selected"></div>
-            <small>Selected</small>
-          </li>
-          <li>
-            <div class="seat occupied"></div>
-            <small>Occupied</small>
-          </li>
-        </ul>
-
-        <div class="container">
-          <div class="movie-screen">
-            <img src="/assets/screen-thumb.png" alt="screen" />
-          </div>
-
-          <div class="row-container">
-            <div class="row">
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-            </div>
-            <div class="row">
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat occupied"></div>
-              <div class="seat occupied"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-            </div>
-            <div class="row">
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat occupied"></div>
-              <div class="seat occupied"></div>
-            </div>
-            <div class="row">
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-            </div>
-            <div class="row">
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat occupied"></div>
-              <div class="seat occupied"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-            </div>
-            <h5 class="subtitle">GOLD</h5>
-            <div class="row">
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-            </div>
-            <div class="row">
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat"></div>
-              <div class="seat occupied"></div>
-              <div class="seat occupied"></div>
-              <div class="seat occupied"></div>
-              <div class="seat"></div>
-            </div>
-            <h5 class="subtitle">DIAMOND</h5>
-
-            <div class="text-wrapper">
-              <p class="text">Selected Seats <span id="count">0</span></p>
-              <p class="text">Total Price ₹<span id="total">0</span></p>
-            </div>
-
-            <a href="../main/main.html">
-              <button class="btn-home">Home</button>
-            </a>
-          </div>
+    <div class="contt">
+      <h2 class="location">Cinema Location: IIITM GWALIOR</h2>
+      <ul class="showcase">
+        <li>
+          <div id="seat" class="seat"></div>
+          <small class="status" style="font-size: 1em">N/A</small>
+        </li>
+        <li>
+          <div id="seat" class="seat selected"></div>
+          <small class="status" style="font-size: 1em">Selected</small>
+        </li>
+        <li>
+          <div id="seat" class="seat occupied"></div>
+          <small class="status" style="font-size: 1em">Occupied</small>
+        </li>
+      </ul>
+      <div class="container">
+        <!-- <div class="screen"></div> -->
+        <div class="row">
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+        </div>
+        <div class="row">
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+        </div>
+        <div class="row">
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat occupied"></div>
+        </div>
+        <div class="row">
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+        </div>
+        <div class="row">
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+        </div>
+        <div class="row">
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat occupied"></div>
+          <div id="seat" class="seat"></div>
         </div>
       </div>
+      <div class="subdate"> 
+        <input type="date" name="" id="date">
+    
+        <button id="log" class="LOgin">Submit</button>
+      </div>
+     
+
+      <!-- <p class="text" style="font-size: 1em; margin: 0px 0px 15px 0px">
+        You have selected <span id="count">0</span> seats for a price of <span
+          id="total"
+          >0</span
+        >
+      </p> -->
+      <!-- <a href="../main/main.html">
+        <button class="btn-home">Home</button>
+      </a> -->
     </div>
+
+    <div class="BOX">
+      <div class="BOX-items">
+    
+        <div class="close">
+          
+          <p class="Cancel">+</p>
+        </div>
+        
+        <h1 style="color: black; text-align: left;">Theatre</h1>
+    
+        <h2 style="color: black;">Your ticket</h2>
+        <h3 class="Movie-Name"></h3>
+        <h3>Location: IIITM GWALIOR</h3>
+        <h3 class="dates"></h3>
+        <h3  class="seats"></h3>
+        <h3 class="amount"></h3>
+          <!-- <input type="email" placeholder=" &#xf0e0; Email">
+          <input type="password" placeholder="password"> -->
+          
+          
+          <button class="button">Done</button>
+         
+         
+       
+    
+      </div>
+
+     
+         
+      
+        </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
+
+
 
     <script src="./book.js"></script>
   </body>

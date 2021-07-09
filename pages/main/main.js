@@ -195,13 +195,16 @@ function getMovies(url) {
       }
     });
 }
-
+let title1;
+let poster_path1;
 function showMovies(data) {
   main.innerHTML = "";
 
   data.forEach((movie) => {
     const { title, poster_path, vote_average, overview, id } = movie;
     const movieEl = document.createElement("div");
+    title1 = title;
+    poster_path1 = poster_path;
     movieEl.classList.add("movie");
     movieEl.innerHTML = `
              <img src="${
@@ -278,10 +281,10 @@ function openNav(movie) {
             <div class="overlay-overview">
                 <p class="no-results" >${movie.overview}</p>
             </div>
-            <a href="../booking/book.html">
+            <a href="../booking/book.html?name=${title1}&poster=${poster_path1}"> 
             <div class="book">
                 
-            <button class="booknow" >book now</button
+            <button class="booknow" >book now</button>
             </div> 
             </a>
           </div>    
