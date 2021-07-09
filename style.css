@@ -191,8 +191,7 @@ input {
 }
 
 .overlay {
-  /* background: blue; */
-  /* background-image: url("130134.jpg"); */
+  
   background-image: url("./assets/theatre.jpg");
 
   background-repeat: no-repeat;

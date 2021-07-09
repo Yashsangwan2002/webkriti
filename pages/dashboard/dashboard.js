@@ -1,7 +1,8 @@
+// const apiUrl = " https://serverwebmonth.herokuapp.com";
 const apiUrl = "https://serverwebmonth.herokuapp.com";
+
 var key = localStorage.getItem("email");
 let email = key;
-const main = document.getElementById("main");
 
 window.addEventListener("load", () => {
   fetch(`${apiUrl}/movie/info`, {

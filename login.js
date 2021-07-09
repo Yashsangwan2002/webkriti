@@ -28,7 +28,6 @@ signInForm.addEventListener("submit", (event) => {
 
   const email = signInEmail.value;
   const password = signInPassword.value;
-  localStorage.setItem("email", `${email}`);
 
   fetch(`${apiUrl}/auth/signin`, {
     method: "POST",
