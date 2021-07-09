@@ -20,18 +20,21 @@ window.addEventListener("load", () => {
         if (element.date !== null) {
           const movieEl = document.createElement("div");
           movieEl.classList.add("flex-container");
-          movieEl.innerHTML = `  <div class="content-container">
-        <div class="form-container">
-        <h1 style="color:rgb(9, 255, 0);"></h1>
-          <h2 class="white" id="name">${element.moviename}</h2>
-          <br />
-          <h2 class="white">Location:IITM Gwalior</h2>
-          <br />
-
-          <span class="white" id="date">${element.date}</span>
-          <br />
-        </div>
-      </div>`;
+          movieEl.innerHTML = `    <div class="flex-container">
+          <div class="content-container">
+            <div class="form-container">
+              <h1 style="color:rgb(9, 255, 0);"></h1>
+              <h2 class="white" id="name">Movie Name:${data[0].moviename}</h2>
+              <br />
+             
+              <h2 class="white">Location:IITM Gwalior</h2>
+              <br />
+    
+              <span class="white" id="date">Date:${data[0].date}</span>
+              <br />
+            </div>
+          </div>
+        </div>`;
           main.appendChild(movieEl);
         }
       });

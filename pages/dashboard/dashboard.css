@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +11,7 @@ html {
 }
 
 body {
-  font-family:  "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #121212; /* fallback for old browsers */
   overflow-x: hidden;
 
@@ -122,12 +121,11 @@ input {
 
   box-shadow: none;
 }
-.white{
-  
+.white {
   color: white;
 }
 
-.fas{
+.fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
   font-size: 2rem;
@@ -136,8 +134,7 @@ input {
   text-align: center;
   margin: 8px;
 }
-.MainUser{
+.MainUser {
   display: flex;
   margin-top: 10px;
 }
-

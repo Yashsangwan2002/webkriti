@@ -265,7 +265,7 @@ function openNav(movie) {
               <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/${key}"
+              src="https://www.youtube.com/embed/${key}?autoplay=1"
               title="${name}"
               class="embed hide"
               frameborder="0"
