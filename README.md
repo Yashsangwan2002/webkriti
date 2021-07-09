@@ -11,7 +11,7 @@ This Project is based on *Movie Booking Application*. The Site's Name is **Theat
 https://drive.google.com/drive/folders/10DWVO3binidZJALLQGEW3F_v-pr4yLjL?usp=sharing
 
 # HOSTED URL
-Follow this link to view the site:
+Follow this link to view the site:https://ecstatic-almeida-df2774.netlify.app/
 
 # Features Implemented
 
