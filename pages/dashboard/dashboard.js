@@ -1,6 +1,7 @@
-const apiUrl = " https://serverwebmonth.herokuapp.com";
+const apiUrl = "https://ecstatic-almeida-df2774.netlify.app ";
 var key = localStorage.getItem("email");
 let email = key;
+const main = document.getElementById("main");
 
 window.addEventListener("load", () => {
   fetch(`${apiUrl}/movie/info`, {
@@ -12,10 +13,27 @@ window.addEventListener("load", () => {
   })
     .then((res) => res.json())
     .then((data) => {
-      document.getElementById("name").innerHTML = data[0].moviename;
+      console.log(data);
       document.getElementById("user").innerHTML = data[0].email;
+      data.forEach((element) => {
+        if (element.date !== null) {
+          const movieEl = document.createElement("div");
+          movieEl.classList.add("flex-container");
+          movieEl.innerHTML = `  <div class="content-container">
+        <div class="form-container">
+        <h1 style="color:rgb(9, 255, 0);"></h1>
+          <h2 class="white" id="name">${element.moviename}</h2>
+          <br />
+          <h2 class="white">Location:IITM Gwalior</h2>
+          <br />
 
-      document.getElementById("date").innerHTML = data[0].date;
+          <span class="white" id="date">${element.date}</span>
+          <br />
+        </div>
+      </div>`;
+          main.appendChild(movieEl);
+        }
+      });
     })
     .catch((err) => {
       alert("Error Fetching data");

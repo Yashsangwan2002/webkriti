@@ -12,7 +12,7 @@ signInButton.addEventListener("click", () => {
 //form
 const body = document.querySelector("body");
 
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://ecstatic-almeida-df2774.netlify.app";
 
 window.addEventListener("load", () => {
   body.classList.add("visible");
@@ -28,6 +28,7 @@ signInForm.addEventListener("submit", (event) => {
 
   const email = signInEmail.value;
   const password = signInPassword.value;
+  localStorage.setItem("email", `${email}`);
 
   fetch(`${apiUrl}/auth/signin`, {
     method: "POST",
