@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +12,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:  "Poppins", sans-serif;
   background: #121212; /* fallback for old browsers */
   overflow-x: hidden;
 
@@ -49,6 +52,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: cornflowerblue; */
 }
 
 .content-container {
@@ -73,8 +77,9 @@ h1 {
   justify-content: center;
   flex-direction: column;
 
-  background: #1f1f1f;
+  /* background: #1f1f1f; */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+  background: cornflowerblue;
 }
 
 .subtitle {
@@ -117,3 +122,22 @@ input {
 
   box-shadow: none;
 }
+.white{
+  
+  color: white;
+}
+
+.fas{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  font-size: 2rem;
+  height: 2rem;
+  width: 3rem;
+  text-align: center;
+  margin: 8px;
+}
+.MainUser{
+  display: flex;
+  margin-top: 10px;
+}
+
